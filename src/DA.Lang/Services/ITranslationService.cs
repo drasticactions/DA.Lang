@@ -18,7 +18,7 @@ public interface ITranslationService
     
     public bool CanExecute { get; }
     
-    public Task<string> TranslateAsync(string text);
+    public Task<Translation?> TranslateAsync(string text);
 }
 
 public static class TranslationServiceExtensions

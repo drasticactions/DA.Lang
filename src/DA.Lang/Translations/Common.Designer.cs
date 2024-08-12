@@ -14,7 +14,7 @@ namespace DA.Lang.Translations {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Common {
+    public class Common {
         
         private static System.Resources.ResourceManager resourceMan;
         
@@ -25,7 +25,7 @@ namespace DA.Lang.Translations {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static System.Resources.ResourceManager ResourceManager {
+        public static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
                     System.Resources.ResourceManager temp = new System.Resources.ResourceManager("DA.Lang.Translations.Common", typeof(Common).Assembly);
@@ -36,7 +36,7 @@ namespace DA.Lang.Translations {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static System.Globalization.CultureInfo Culture {
+        public static System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -45,81 +45,129 @@ namespace DA.Lang.Translations {
             }
         }
         
-        internal static string AppName {
+        public static string AppName {
             get {
                 return ResourceManager.GetString("AppName", resourceCulture);
             }
         }
         
-        internal static string Neutral {
+        public static string Neutral {
             get {
                 return ResourceManager.GetString("Neutral", resourceCulture);
             }
         }
         
-        internal static string Casual {
+        public static string Casual {
             get {
                 return ResourceManager.GetString("Casual", resourceCulture);
             }
         }
         
-        internal static string Formal {
+        public static string Formal {
             get {
                 return ResourceManager.GetString("Formal", resourceCulture);
             }
         }
         
-        internal static string Professional {
+        public static string Professional {
             get {
                 return ResourceManager.GetString("Professional", resourceCulture);
             }
         }
         
-        internal static string Honorific {
+        public static string Honorific {
             get {
                 return ResourceManager.GetString("Honorific", resourceCulture);
             }
         }
         
-        internal static string Humble {
+        public static string Humble {
             get {
                 return ResourceManager.GetString("Humble", resourceCulture);
             }
         }
         
-        internal static string Friendly {
+        public static string Friendly {
             get {
                 return ResourceManager.GetString("Friendly", resourceCulture);
             }
         }
         
-        internal static string Sarcastic {
+        public static string Sarcastic {
             get {
                 return ResourceManager.GetString("Sarcastic", resourceCulture);
             }
         }
         
-        internal static string Angry {
+        public static string Angry {
             get {
                 return ResourceManager.GetString("Angry", resourceCulture);
             }
         }
         
-        internal static string SocialMedia {
+        public static string SocialMedia {
             get {
                 return ResourceManager.GetString("SocialMedia", resourceCulture);
             }
         }
         
-        internal static string Texting {
+        public static string Texting {
             get {
                 return ResourceManager.GetString("Texting", resourceCulture);
             }
         }
         
-        internal static string Custom {
+        public static string Custom {
             get {
                 return ResourceManager.GetString("Custom", resourceCulture);
+            }
+        }
+        
+        public static string ApiKeyMissing {
+            get {
+                return ResourceManager.GetString("ApiKeyMissing", resourceCulture);
+            }
+        }
+        
+        public static string TranslateButton {
+            get {
+                return ResourceManager.GetString("TranslateButton", resourceCulture);
+            }
+        }
+        
+        public static string TranslatingBusyText {
+            get {
+                return ResourceManager.GetString("TranslatingBusyText", resourceCulture);
+            }
+        }
+        
+        public static string SettingsButton {
+            get {
+                return ResourceManager.GetString("SettingsButton", resourceCulture);
+            }
+        }
+        
+        public static string CloseButton {
+            get {
+                return ResourceManager.GetString("CloseButton", resourceCulture);
+            }
+        }
+        
+        public static string EnterTextLabel {
+            get {
+                return ResourceManager.GetString("EnterTextLabel", resourceCulture);
+            }
+        }
+        
+        public static string OutputTextLabel {
+            get {
+                return ResourceManager.GetString("OutputTextLabel", resourceCulture);
+            }
+        }
+        
+        public static string ToneLabel {
+            get {
+                return ResourceManager.GetString("ToneLabel", resourceCulture);
             }
         }
     }

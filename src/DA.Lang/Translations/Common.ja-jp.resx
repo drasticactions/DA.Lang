@@ -1,0 +1,77 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="AppName" xml:space="preserve">
+    <value>DA.Lang</value>
+    </data>
+        <data name="Neutral" xml:space="preserve">
+        <value>中立</value>
+    </data>
+        <data name="Casual" xml:space="preserve">
+        <value>カジュアル</value>
+    </data>
+        <data name="Formal" xml:space="preserve">
+        <value>フォーマル</value>
+    </data>
+        <data name="Professional" xml:space="preserve">
+        <value>プロフェッショナル</value>
+    </data>
+        <data name="Honorific" xml:space="preserve">
+        <value>敬語</value>
+    </data>
+        <data name="Humble" xml:space="preserve">
+        <value>謙遜</value>
+    </data>
+        <data name="Friendly" xml:space="preserve">
+        <value>フレンドリー</value>
+    </data>
+        <data name="Sarcastic" xml:space="preserve">
+        <value>皮肉</value>
+    </data>
+        <data name="Angry" xml:space="preserve">
+        <value>怒り</value>
+    </data>
+    <data name="SocialMedia" xml:space="preserve">
+        <value>ソーシャルメディア</value>
+    </data>
+    <data name="Texting" xml:space="preserve">
+        <value>SNS</value>
+    </data>
+        <data name="Custom" xml:space="preserve">
+        <value>カスタム</value>
+    </data>
+        <data name="ApiKeyMissing" xml:space="preserve">
+        <value>OpenAIサービスを使用するには、OpenAI APIキーを設定する必要があります。</value>
+    </data>
+        <data name="TranslateButton" xml:space="preserve">
+        <value>翻訳</value>
+    </data>
+        <data name="TranslatingBusyText" xml:space="preserve">
+        <value>翻訳中...</value>
+    </data>
+        <data name="SettingsButton" xml:space="preserve">
+        <value>設定</value>
+    </data>
+    <data name="EnterTextLabel" xml:space="preserve">
+        <value>テキストを入力...</value>
+    </data>
+    <data name="OutputTextLabel" xml:space="preserve">
+        <value>翻訳テキスト...</value>
+    </data>
+    <data name="CloseButton" xml:space="preserve">
+        <value>↓</value>
+    </data>
+    <data name="ToneLabel" xml:space="preserve">
+        <value>文調</value>
+    </data>
+</root>

@@ -1,4 +1,4 @@
-namespace DA.OpenAI.Lang.Exceptions;
+namespace DA.Lang.Exceptions;
 
 public class OpenAIGenerationException : Exception
 {

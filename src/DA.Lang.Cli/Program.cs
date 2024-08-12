@@ -23,7 +23,7 @@ class Commands
         apiToken = (string.IsNullOrEmpty(apiToken) ? Environment.GetEnvironmentVariable("OPEN_AI_KEY") : apiToken) ?? string.Empty;
         if (string.IsNullOrWhiteSpace(apiToken))
         {
-            Console.WriteLine(DA.OpenAI.Lang.Translations.Common.ApiKeyMissing);
+            Console.WriteLine(DA.Lang.Translations.Common.ApiKeyMissing);
             return;
         }
 
@@ -33,7 +33,7 @@ class Commands
             return;
         }
 
-        var translation = new DA.OpenAI.Lang.Services.OpenAITranslationService
+        var translation = new DA.Lang.Services.OpenAITranslationService
         {
             ApiKey = apiToken,
             Tone = tone,
@@ -46,6 +46,6 @@ class Commands
         }
     
         var result = await translation.TranslateAsync(text);
-        Console.WriteLine(result);
+        Console.WriteLine(result?.TranslatedText);
     }
 }

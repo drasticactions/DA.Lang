@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DA.Lang\DA.Lang.csproj" />
-    <ProjectReference Include="..\DA.OpenAI.Lang\DA.OpenAI.Lang.csproj" />
   </ItemGroup>
 
   <ItemGroup>

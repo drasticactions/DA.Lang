@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:common="clr-namespace:DA.Lang.Translations;assembly=DA.Lang"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="DA.LangMaui.SettingsPage">
+    <ContentPage.Content>
+        <Grid RowSpacing="5" RowDefinitions="Auto, *, Auto">
+            <Label Margin="5" FontAttributes="Bold" FontSize="15" HorizontalOptions="Center" Text="{x:Static common:Common.SettingsButton}"></Label>
+            <ScrollView Grid.Row="1">
+                <Grid RowDefinitions="Auto, Auto">
+                    <Grid Margin="5" RowSpacing="2" RowDefinitions="Auto, Auto">
+                        <Label HorizontalOptions="Start" FontAttributes="Bold" FontSize="13" Text="OpenAI Token: " />
+                        <Entry HorizontalOptions="Fill" Grid.Row="1" Text="{Binding OpenAiKey}" IsPassword="True"/>
+                    </Grid>
+                </Grid>
+            </ScrollView>
+            <Button Style="{StaticResource ButtonStyle}"
+                    Margin="5"
+                    Grid.Row="2"
+                    Clicked="Button_OnClicked"
+                    Text="{x:Static common:Common.CloseButton}" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

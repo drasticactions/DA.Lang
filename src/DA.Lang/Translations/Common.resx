@@ -57,4 +57,28 @@
     <data name="Custom" xml:space="preserve">
         <value>Custom</value>
     </data>
+    <data name="ApiKeyMissing" xml:space="preserve">
+        <value>To use the OpenAI service, you must set the OpenAI API key.</value>
+    </data>
+    <data name="TranslateButton" xml:space="preserve">
+        <value>Translate</value>
+    </data>
+    <data name="TranslatingBusyText" xml:space="preserve">
+        <value>Translating...</value>
+    </data>
+    <data name="SettingsButton" xml:space="preserve">
+        <value>Settings</value>
+    </data>
+    <data name="CloseButton" xml:space="preserve">
+        <value>↓</value>
+    </data>
+    <data name="EnterTextLabel" xml:space="preserve">
+        <value>Enter text...</value>
+    </data>
+    <data name="OutputTextLabel" xml:space="preserve">
+        <value>Output Text...</value>
+    </data>
+    <data name="ToneLabel" xml:space="preserve">
+        <value>Tone</value>
+    </data>
 </root>

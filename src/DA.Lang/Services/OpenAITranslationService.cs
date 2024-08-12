@@ -3,17 +3,28 @@ using System.Globalization;
 using System.Runtime.CompilerServices;
 using DA.Lang.Models;
 using DA.Lang.Services;
-using DA.OpenAI.Lang.Exceptions;
+using DA.Lang.Exceptions;
 
-namespace DA.OpenAI.Lang.Services;
+namespace DA.Lang.Services;
 
 public class OpenAITranslationService : ITranslationService, INotifyPropertyChanged
 {
+    private Tone _tone;
     private string _customTone;
     private string _apiKey;
+    private CultureInfo _culture = CultureInfo.InvariantCulture;
     
-    public Tone Tone { get; set; }
-    public CultureInfo Culture { get; set; } = CultureInfo.InvariantCulture;
+    public Tone Tone
+    {
+        get => _tone;
+        set => SetField(ref _tone, value);
+    }
+
+    public CultureInfo Culture
+    {
+        get => _culture;
+        set => SetField(ref _culture, value);
+    }
 
     public string CustomTone
     {
@@ -32,7 +43,7 @@ public class OpenAITranslationService : ITranslationService, INotifyPropertyChan
 
     public bool CanExecute => !string.IsNullOrWhiteSpace(ApiKey) && !this.Culture.IsNeutralCulture;
 
-    public async Task<string> TranslateAsync(string text)
+    public async Task<Translation?> TranslateAsync(string text)
     {
         if (string.IsNullOrWhiteSpace(ApiKey))
         {
@@ -40,7 +51,7 @@ public class OpenAITranslationService : ITranslationService, INotifyPropertyChan
         }
         
         if (string.IsNullOrEmpty(text))
-            return string.Empty;
+            return null;
 
         var openAiClient = new global::OpenAI.OpenAIClient(ApiKey);
         var systemMessage = new global::OpenAI.Chat.SystemChatMessage(this.GenerateSystemMessage());
@@ -58,7 +69,15 @@ public class OpenAITranslationService : ITranslationService, INotifyPropertyChan
         }
         
         var responseText = response.Value.Content.FirstOrDefault()?.Text ?? throw new OpenAIGenerationException();
-        return responseText;
+        return new Translation()
+        {
+            OriginalText = text,
+            TranslatedText = responseText,
+            Tone = Tone,
+            Language = Culture.IetfLanguageTag,
+            TranslationService = TranslationService,
+            TranslatedAt = DateTime.UtcNow
+        };
     }
 
     public event PropertyChangedEventHandler? PropertyChanged;
