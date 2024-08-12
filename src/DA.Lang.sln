@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DA.Lang", "DA.Lang\DA.Lang.csproj", "{AED19886-3908-4072-8900-F99F86CDE460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DA.OpenAI.Lang", "DA.OpenAI.Lang\DA.OpenAI.Lang.csproj", "{E0AB3256-DEAB-46D4-B625-D339288B8A49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DA.Lang.Cli", "DA.Lang.Cli\DA.Lang.Cli.csproj", "{99031512-FB9E-407B-9DF8-D68415457EBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AED19886-3908-4072-8900-F99F86CDE460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AED19886-3908-4072-8900-F99F86CDE460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AED19886-3908-4072-8900-F99F86CDE460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AED19886-3908-4072-8900-F99F86CDE460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0AB3256-DEAB-46D4-B625-D339288B8A49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0AB3256-DEAB-46D4-B625-D339288B8A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0AB3256-DEAB-46D4-B625-D339288B8A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0AB3256-DEAB-46D4-B625-D339288B8A49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99031512-FB9E-407B-9DF8-D68415457EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99031512-FB9E-407B-9DF8-D68415457EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99031512-FB9E-407B-9DF8-D68415457EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99031512-FB9E-407B-9DF8-D68415457EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
